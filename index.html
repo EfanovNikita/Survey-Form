@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Second task</title>
+    <meta name="viewport" content="width=device-width">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <main id="main" class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Title</h1>
+            <p id="description" class="text-center">description</p>
+        </header>
+        <form action="" id="survey-form">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" id="name" placeholder="Your name" class="text-input" required>
+            <label for="email" id="email-label">Email</label>
+            <input type="email" name="email" id="email" placeholder="Your email" class="text-input" required>
+            <label for="number" id="number-label">Age</label>
+            <input type="number" name="age" id="number" min="10" max="100" placeholder="Your age" class="text-input">
+            <label for="dropdown" id="selector-label">Selector</label>
+            <select name="selector" id="dropdown" class="text-input">
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+
+            <fieldset>
+                <legend>Radio buttons</legend>
+                <div>
+                    <input type="radio" name="radio" id="radio-1" value="Radio button 1" class="input-chk-rd">
+                    <label for="radio-1">Radio button 1</label>
+                </div>
+                <div>
+                    <input type="radio" name="radio" id="radio-2" value="Radio button 2" class="input-chk-rd">
+                    <label for="radio-2">Radio button 2</label>
+                </div>
+                <div>
+                    <input type="radio" name="radio" id="radio-3" value="Radio button 3" class="input-chk-rd">
+                    <label for="radio-3">Radio button 3</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Checkboxes</legend>
+                <input type="checkbox" name="checkboxes" id="checkbox-1" value="checkbox-1">
+                <label for="checkbox-1">Checkbox-1</label>
+                <input type="checkbox" name="checkboxes" id="checkbox-2" value="checkbox-2">
+                <label for="checkbox-2">Checkbox-2</label>
+                <input type="checkbox" name="checkboxes" id="checkbox-3" value="checkbox-3">
+                <label for="checkbox-3">Checkbox-3</label>
+                <input type="checkbox" name="checkboxes" id="checkbox-4" value="checkbox-4">
+                <label for="checkbox-4">Checkbox-4</label>
+                <input type="checkbox" name="checkboxes" id="checkbox-5" value="checkbox-5">
+                <label for="checkbox-5">Checkbox-5</label>
+                <input type="checkbox" name="checkboxes" id="checkbox-6" value="checkbox-6">
+                <label for="checkbox-6">Checkbox-6</label>
+            </fieldset>
+            <label for="textarea" id="textarea-label">Textarea</label>
+            <textarea name="textarea" id="textarea" cols="30" rows="10"
+                placeholder="Enter your comment here" class="text-input"></textarea>
+            <input type="submit" value="Submit" id="submit" class="button-submit">
+        </form>
+    </main>
+</body>
+
+</html>
